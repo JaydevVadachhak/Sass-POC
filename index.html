@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- StyleSheet -->
+    <link rel="stylesheet" href="./styles/index.css" />
+
+    <!-- Title -->
+    <title>Sass - POC</title>
+  </head>
+  <body>
+    <nav class="nav-bar">
+      <h2 class="nav-title">SASS - POC</h2>
+    </nav>
+    <div class="card-container">
+      <h1>Cards using Mixins, Maps (@mixin, @each, @if, @include)</h1>
+      <div class="cards">
+        <div class="card-primary">
+          <h3 class="card-title">Primary Card</h3>
+        </div>
+        <div class="card-secondary">
+          <h3 class="card-title">Secondary Card</h3>
+        </div>
+        <div class="card-error">
+          <h3 class="card-title">Error Card</h3>
+        </div>
+        <div class="card-info">
+          <h3 class="card-title">Info Card</h3>
+        </div>
+      </div>
+    </div>
+    <div class="colors-container">
+      <h1>Utility Classes using Maps (@each, @for, mix())</h1>
+      <div class="blocks">
+        <div class="bg-purple-dark-8 text-white block">Purple Dark 8</div>
+        <div class="bg-purple-dark-7 text-white block">Purple Dark 7</div>
+        <div class="bg-purple-dark-6 text-white block">Purple Dark 6</div>
+        <div class="bg-purple-dark-5 text-white block">Purple Dark 5</div>
+        <div class="bg-purple-dark-4 text-white block">Purple Dark 4</div>
+        <div class="bg-purple-dark-3 text-white block">Purple Dark 3</div>
+        <div class="bg-purple-dark-2 text-white block">Purple Dark 2</div>
+        <div class="bg-purple-dark-1 text-white block">Purple Dark 1</div>
+      </div>
+      <div class="blocks">
+        <div class="bg-orange-light-1 text-black block">Orange Light 1</div>
+        <div class="bg-orange-light-2 text-black block">Orange Light 2</div>
+        <div class="bg-orange-light-3 text-black block">Orange Light 3</div>
+        <div class="bg-orange-light-4 text-black block">Orange Light 4</div>
+        <div class="bg-orange-light-5 text-black block">Orange Light 5</div>
+        <div class="bg-orange-light-6 text-black block">Orange Light 6</div>
+        <div class="bg-orange-light-7 text-black block">Orange Light 7</div>
+        <div class="bg-orange-light-8 text-black block">Orange Light 8</div>
+      </div>
+    </div>
+    <div class="buttons-container">
+      <h1>
+        Button Utility (Function, Parent Selector (&:hover), lighten(),
+        complement())
+      </h1>
+      <div class="buttons">
+        <a class="btn" href="">Default Button</a>
+        <a class="btn-green" href="">Button Green</a>
+        <a class="btn-outlined-blue" href="">Button</a>
+        <a class="btn-complement-blue" href="">Button</a>
+      </div>
+    </div>
+    <div class="fonts-container">
+      <h1>Fonts Utility</h1>
+      <div class="fonts">
+        <div class="font-sm">this is small font</div>
+        <div class="font-md">this is medium font</div>
+        <div class="font-lg">this is large font</div>
+        <div class="font-xl">this is extra large font</div>
+        <div class="font-xxl">this is extra, extra large font</div>
+      </div>
+    </div>
+  </body>
+</html>

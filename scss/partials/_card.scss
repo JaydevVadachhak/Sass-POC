@@ -1,0 +1,19 @@
+@import "./variables";
+
+@mixin define-card-style($class-name, $width: 15rem, $height: 5rem) {
+  @each $key, $val in $card-colors {
+    @if ($key == $class-name) {
+      .card-#{$class-name} {
+        background-color: $val;
+        width: $width;
+        height: $height;
+
+        .card-title {
+          padding: 1rem;
+          font-size: 1rem;
+          color: white;
+        }
+      }
+    }
+  }
+}

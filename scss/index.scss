@@ -1,0 +1,99 @@
+@import "./partials/imports";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: inherit;
+}
+
+body {
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+}
+
+@mixin primary-heading($color) {
+  color: $color;
+  margin: 2rem 0rem;
+  font-size: 1.6rem;
+}
+
+%column-container-shared {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+%row-container-shared {
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-bar {
+  background-color: $primary-card-color;
+  margin-bottom: $base-margin;
+  width: 100%;
+
+  .nav-title {
+    padding: 0.5rem;
+    color: white;
+    font-size: 1.8rem;
+  }
+}
+
+.card-container {
+  @extend %column-container-shared;
+
+  h1 {
+    @include primary-heading($primary-font-color);
+  }
+
+  .cards {
+    @extend %row-container-shared;
+    @include define-card-style("primary");
+    @include define-card-style("secondary");
+    @include define-card-style("error");
+    @include define-card-style("info");
+  }
+}
+
+.colors-container {
+  @extend %column-container-shared;
+
+  h1 {
+    @include primary-heading($primary-font-color);
+  }
+
+  .blocks {
+    @extend %row-container-shared;
+
+    .block {
+      padding: 1rem;
+      font-size: 1rem;
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+.buttons-container {
+  @extend %column-container-shared;
+
+  h1 {
+    @include primary-heading($primary-font-color);
+  }
+
+  .buttons {
+    .btn {
+      @include btn;
+    }
+  }
+}
+
+.fonts-container {
+  @extend %column-container-shared;
+
+  h1 {
+    @include primary-heading($primary-font-color);
+  }
+}
